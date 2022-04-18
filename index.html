@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes Button</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <h5>CSS Animation to Change the Hover State of a Button</h5>
+
+        <p>You can use CSS @keyframes to change the color of a button in its hover state.
+
+            Here's an example of changing the width of an image on hover:
+
+            
+                img {
+                width: 30px;
+                }
+
+                img:hover {
+                animation-name: width;
+                animation-duration: 500ms;
+                }
+
+                @keyframes width {
+                100% {
+                width: 40px;
+                }
+                }
+        </p>
+
+        <h5>Exampke</h5>
+
+        <p>Use CSS @keyframes to change the background-color of 
+            the button element so it becomes #4791d0 when a user hovers over it. 
+            The @keyframes rule should only have an entry for 100%.
+
+            <br> <br>
+            <strong>animation-fill-mode property to forwards. </strong>
+            The animation-fill-mode specifies the style applied to an element 
+            when the animation has finished. You can set it like so:
+
+                animation-fill-mode: forwards;
+        </p>
+
+        <button>Register</button>
+
+        <div class="keyframes" id="key"></div>
+
+            <br> <br>
+        <article>
+
+            <h5>Animation Iteration count</h5>
+            <p>
+
+
+                #ball {
+                width: 100px;
+                height: 100px;
+                margin: 50px auto;
+                position: relative;
+                border-radius: 50%;
+                background: linear-gradient(
+                35deg,
+                #ccffff,
+                #ffcccc
+                );
+                animation-name: bounce;
+                animation-duration: 1s;
+                animation-iteration-count: 3;
+                }
+
+                @keyframes bounce{
+                0% {
+                top: 0px;
+                }
+                50% {
+                 top: 249px;
+                width: 130px;
+                height: 70px;
+                }
+                100% {
+                top: 0px;
+                }
+                }
+            </p>
+                <div id="ball"></div>
+            
+
+
+
+        </article>
+
+
+    </section>
+    
+</body>
+</html>

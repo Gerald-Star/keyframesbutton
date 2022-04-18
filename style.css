@@ -1,0 +1,66 @@
+
+
+button {
+    border-radius: 5px;
+    color: white;
+    background-color: #0F5897;
+    padding: 5px 10px 8px 10px;
+  }
+
+  button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+@keyframes background-color{
+ 100% {
+   background-color: #4791d0;
+ }
+}
+
+
+div.keyframes {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  #key {
+    animation-name: rainbow;
+    animation-duration: 4s;
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-color: blue;
+      left: 0px;
+      opacity: 0.1;
+
+    }
+    50% {
+      background-color: green;
+      left: 25px;
+
+    }
+    100% {
+      background-color: yellow;
+      left: -25px;
+
+    }
+  }
+
+  /* How to set animation fade
+  
+  animation-name: fade;
+    animation-duration: 3s;
+  }
+
+  @keyframes fade {
+    50% {
+      left: 60%;
+
+    }
+  }  */
